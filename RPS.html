@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <style>
+        body {
+            justify-content: center;
+            background-color: black;
+        }
+
+        #gamebox {
+            display: flex;
+            flex-flow: row;
+            justify-content: space-evenly;
+            background-color: purple;
+            color: black;
+            margin-bottom: 2em;
+            padding: 1%;
+        }
+        .play{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+
+    <div id="gamebox">
+
+        <div>
+            <label for="user">0->Rock || 1->paper || 2->scissor</label><br><br>
+            <input type="number" id="userinput">
+        </div>
+
+        <p id="result" style="font-size: larger; color: bisque;">clik play to start game</p>
+
+        <div>
+            <span>0->Rock || 1->paper || 2->scissor</span>
+            <p id="computer">2</p>
+        </div>
+
+    </div>
+
+<div class="play">
+    <button type="button" id="playbtn" onclick="validate()">Play</button>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
